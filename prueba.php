@@ -11,4 +11,14 @@
 		echo $fila["IDusuario"]." ".$fila["nombre"]." ".$fila["tipo"]." ".$fila["password"]."<br>";
 	}
 
+
+
+	echo "******************************";
+	$obj->eliminar(2);
+	$res = $obj->consulta();
+
+	while($fila = $res->fetch_assoc()){
+		echo $fila["IDusuario"]." ".$fila["nombre"]." ".$fila["tipo"]." ".$fila["password"]."<br>";
+	}
+
  ?>
