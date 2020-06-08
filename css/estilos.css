@@ -57,3 +57,7 @@ table tr:nth-child(odd){
 table td{
 	padding: 0.2em;
 }
+.eliminar{
+	border: 0;
+	padding: 0;
+}
