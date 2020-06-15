@@ -12,6 +12,15 @@
 			<a href="?sec=usu"><li>Usuario</li></a>
 			<a href="?sec=ven"><li>Ventas</li></a>
 			<a href="?sec=emp"><li>Empleados</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=pro"><li>Producto</li></a>
 		</ul>
 	</nav>
 	<?php 
@@ -21,6 +30,12 @@
 			switch ($sec) {
 				case 'usu':
 					require_once("php/vistaUsuario.php");
+					break;
+				case 'pro':
+					require_once("php/vistaProducto.php");
+					break;
+				case 'gpro':
+					require_once("php/graficaProducto.php");
 					break;
 			}
 		}
