@@ -37,6 +37,9 @@
 				case 'gpro':
 					require_once("php/graficaProducto.php");
 					break;
+				case 'rpro':
+					header("Location: php/reporteProducto.php");
+					break;
 			}
 		}
 	 ?>
