@@ -12,7 +12,7 @@
 			<a href="?sec=usu"><li>Usuario</li></a>
 			<a href="?sec=ven"><li>Ventas</li></a>
 			<a href="?sec=emp"><li>Empleados</li></a>
-			<a href="?sec=pro"><li>Producto</li></a>
+			<a href="?sec=cli"><li>Cliente</li></a>
 			<a href="?sec=pro"><li>Producto</li></a>
 			<a href="?sec=pro"><li>Producto</li></a>
 			<a href="?sec=pro"><li>Producto</li></a>
@@ -34,8 +34,14 @@
 				case 'pro':
 					require_once("php/vistaProducto.php");
 					break;
+				case 'ven':
+					require_once("php/vistaVenta.php");
+					break;
 				case 'gpro':
 					require_once("php/graficaProducto.php");
+					break;
+				case 'cli':
+					require_once("php/vistaCliente.php");
 					break;
 				case 'rpro':
 					header("Location: php/reporteProducto.php");
